@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>ali1212</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/idangerous.swiper.css">
+  	<link rel="stylesheet" href="css/main.css">
+  	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/idangerous.swiper.min.js"></script>
+	<script src="js/skrollr.min.js"></script>
+	<script src="js/weixinapi.js"></script>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<section class="swiper-slide swiper-no-swiping s0">	
+				<div id="skroller-body">
+					<img class="month month-odd month-01" src="images/month-odd.png" data-0="-webkit-transform: translate3d(0px, 0px, 0px);" data-442="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-even month-02" src="images/month-even.png" data-0="-webkit-transform: translate3d(0px, 0px, 0px);" data-608="-webkit-transform: translate3d(0px, -608px, 0px);" >
+					<img class="month month-odd month-03" src="images/month-odd.png" data-0="-webkit-transform: translate3d(-332px, 332px, 0px);" data-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-774="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-even month-04" src="images/month-even.png" data-0="-webkit-transform: translate3d(332px, 332px, 0px);" data-80="-webkit-transform: translate3d(332px, 252px, 0px);" data-412="-webkit-transform: translate3d(0px, -80px, 0px);" data-854="-webkit-transform: translate3d(0px, -522px, 0px);" >
+					<img class="month month-odd month-05" src="images/month-odd.png" data-332="-webkit-transform: translate3d(-332px, 332px, 0px);" data-664="-webkit-transform: translate3d(0px, 0px, 0px);" data-1106="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-even month-06" src="images/month-even.png" data-332="-webkit-transform: translate3d(332px, 332px, 0px);" data-412="-webkit-transform: translate3d(332px, 252px, 0px);" data-744="-webkit-transform: translate3d(0px, -80px, 0px);" data-1186="-webkit-transform: translate3d(0px, -522px, 0px);" >
+					<img class="month month-odd month-07" src="images/month-odd.png" data-664="-webkit-transform: translate3d(-332px, 332px, 0px);" data-996="-webkit-transform: translate3d(0px, 0px, 0px);" data-1438="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-even month-08" src="images/month-even.png" data-664="-webkit-transform: translate3d(332px, 332px, 0px);" data-744="-webkit-transform: translate3d(332px, 252px, 0px);" data-1076="-webkit-transform: translate3d(0px, -80px, 0px);" data-1518="-webkit-transform: translate3d(0px, -522px, 0px);" >
+					<img class="month month-odd month-09" src="images/month-odd.png" data-996="-webkit-transform: translate3d(-332px, 332px, 0px);" data-1328="-webkit-transform: translate3d(0px, 0px, 0px);" data-1770="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-even month-10" src="images/month-even.png" data-996="-webkit-transform: translate3d(332px, 332px, 0px);" data-1076="-webkit-transform: translate3d(332px, 252px, 0px);" data-1408="-webkit-transform: translate3d(0px, -80px, 0px);" data-1740="-webkit-transform: translate3d(0px, -442px, 0px);" >
+					<img class="month month-odd month-11" src="images/month-odd.png" data-1328="-webkit-transform: translate3d(-332px, 332px, 0px);" data-1660="-webkit-transform: translate3d(0px, 0px, 0px);" data-1740="-webkit-transform: translate3d(0px, -80px, 0px);" >
+					<img class="month month-even month-12" src="images/month-even.png" data-1328="-webkit-transform: translate3d(332px, 332px, 0px);" data-1408="-webkit-transform: translate3d(332px, 252px, 0px);" data-1740="-webkit-transform: translate3d(0px, -80px, 0px);">
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			var s = skrollr.init({
+				smoothScrolling: false,
+				mobileDeceleration: 1
+			});
+			var mySwiper = new Swiper('.swiper-container', {
+				mode: 'vertical',
+				noSwiping: true,
+				onSlideChangeStart: function(swiper) {
+					switch(mySwiper.activeIndex) {
+						case 0:
+							break;
+					}
+			    },
+			    onSlideChangeEnd: function(swiper) {
+					switch(mySwiper.activeIndex) {
+						case 0:
+							break;
+
+						case 1:
+							break;
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>
