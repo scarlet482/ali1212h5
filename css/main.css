@@ -17,8 +17,6 @@ body {
 
 .swiper-container {
 	position: absolute;
-	/*width: 100%;*/
-	/*height: 100%;*/
 	left: 0;
 	right: 0;
 	top: 0;
@@ -31,11 +29,11 @@ body {
 }
 
 .s0 {
-	background-image: url("/images/bg-records.png");
+	background-image: url("../images/bg-records.png");
 	background-size: 284px 680px;
-	-webkit-animation: bg 80s;
+	/*-webkit-animation: bg 80s;
 	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;*/
 }
 
 @-webkit-keyframes bg {
@@ -53,6 +51,19 @@ body {
 	height: 100%;
 }
 
+.title-taobao {
+	top: 0;
+	left: 0;
+	width: 651px;
+	height: 592.5px;
+	overflow: hidden;
+	/*-webkit-animation: fadeInLeftUp 1s;*/
+}
+
+.title-taobao img {
+	width: 651px;
+}
+
 .title-records {
 	right: 2.45%;
 	top: 6.69%;
@@ -68,7 +79,7 @@ body {
 	/*top: 309px;*/
 	width: 332px;
 	height: 332px;
-	background-image: url("/images/month-odd.png");
+	background-image: url("../images/month-odd.png");
 	background-size: 332px 332px;
 }
 
@@ -81,7 +92,7 @@ body {
 	top: 309px;
 	width: 332px;
 	height: 332px;
-	background-image: url("/images/month-even.png");
+	background-image: url("../images/month-even.png");
 	background-size: 332px 332px;
 }
 
@@ -91,10 +102,10 @@ body {
 }
 
 .month01 {
-	-webkit-animation: fadeInLeftUp 1s;
+	/*-webkit-animation: fadeInLeftUp 1s;
 	-webkit-animation-delay: .2s;
 	-webkit-animation-fill-mode: backwards;
-	animation-fill-mode: backwards;
+	animation-fill-mode: backwards;*/
 }
 
 .month01 img {
@@ -103,10 +114,10 @@ body {
 }
 
 .month02 {
-	-webkit-animation: fadeInRightUp 1s;
+	/*-webkit-animation: fadeInRightUp 1s;
 	-webkit-animation-delay: .4s;
 	-webkit-animation-fill-mode: backwards;
-	animation-fill-mode: backwards;
+	animation-fill-mode: backwards;*/
 }
 
 .month02 img {
@@ -176,6 +187,100 @@ body {
 
 .icon01 img {
 	width: 124px;
+}
+
+.icon02 {
+	top: 298px;
+	/*margin-right: 6.34%;*/
+	margin-right: -4.57%;
+	width: 197px;
+	height: 160.5px;
+	overflow: hidden;
+}
+
+.icon02 img {
+	width: 197px;
+}
+
+.bg-ranking01 {
+	right: 0;
+	height: 100%;
+	background-color: #ffd800;
+	background-image: url("../images/bg-ranking01.png");
+	background-size: 144px 203px;
+}
+
+.title-ranking01 {
+	/*left: 45px;*/
+	left: 7.1%;
+	/*top: 31px;*/
+	top: 5.45%;
+	width: 178px;
+}
+
+.bg-ranking02 {
+	width: 100%;
+	height: 100%;
+	background-color: #ff4200;
+	background-image: url("../images/bg-ranking02.png");
+	background-size: 83px 114px;
+}
+
+.bg-ranking03 {
+	width: 100%;
+	height: 100%;
+	background-color: #ffd800;
+	background-image: url("../images/bg-ranking03.png");
+	background-size: 137px 134px;
+}
+
+.bg-ranking04 {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	background-image: url("../images/bg-ranking04.png");
+	background-size: 107px 121px;
+}
+
+.bg-ranking05 {
+	width: 100%;
+	height: 100%;
+	background-color: #ff4200;
+	background-image: url("../images/bg-ranking05.png");
+	background-size: 98px 129px;
+}
+
+.bg-ranking06 {
+	width: 100%;
+	height: 100%;
+	background-color: #ffd800;
+	background-image: url("../images/bg-ranking06.png");
+	background-size: 155px 149px;
+}
+
+.bg-ranking07 {
+	width: 100%;
+	height: 100%;
+	background-color: #ff4200;
+	background-image: url("../images/bg-ranking07.png");
+	background-size: 80px 81px;
+}
+
+.bg-ranking08 {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-image: url("../images/bg-ranking08.png");
+	background-size: 70px 67px;
+}
+
+.ranking01 {
+	top: 165px;
+	left: 27px;
+	width: 1169px;
+	height: 1170px;
+	background-image: url("../images/ranking01.png");
+	background-size: 1169px 1170px;
 }
 
 @-webkit-keyframes fadeInLeftUp {
