@@ -192,83 +192,39 @@ body {
 	width: 150px;
 }
 
-.bg-ranking-odd {
+
+
+/* modified: 改用CSS3选择器 */
+.bg-ranking{
+	width: 100%;
+	height: 100%;
+}
+
+.bg-ranking:nth-child(odd){
 	right: 0;
-	width: 100%;
-	height: 100%;
 }
 
-.bg-ranking-even {
-	left: 0;
-	width: 100%;
-	height: 100%;
+.bg-ranking:nth-child(even){
+	left:0;
 }
 
+
+/* bg-ranking */
 .bg-ranking01 {
 	background-color: #ffd800;
 	background-image: url("../images/bg-ranking01.png");
 	background-size: 144px 203px;
 }
-
-/* ranking图片宽高不同时取大的 */
-.ranking01 {
-	top: 165px;
-	left: 27px;
-	width: 1094px;
-	height: 1094px;
-	background-image: url("../images/ranking01.png");
-	background-size: 1094px 1094px;
-}
-
-.title-ranking01 {
-	left: 23px;
-	width: 178px;
-	height: 117px;
-}
-
 .bg-ranking02 {
 	background-color: #ff4200;
 	background-image: url("../images/bg-ranking02.png");
 	background-size: 83px 114px;
 }
-
-.ranking02 {
-	top: 163px;
-	right: 23px;
-	width: 1252px;
-	height: 1252px;
-	background-image: url("../images/ranking02.png");
-	background-size: 1252px 1252px;
-}
-
-.title-ranking02 {
-	right: 26px;
-	width: 210px;
-	height: 159px;
-}
-
 .bg-ranking03 {
 	background-color: #ffd800;
 	background-image: url("../images/bg-ranking03.png");
 	background-size: 137px 134px;
 }
-
-.ranking03 {
-	top: 163px;
-	left: 24px;
-	width: 1238px;
-	height: 1238px;
-	background-image: url("../images/ranking03.png");
-	background-size: 1238px 1238px;
-}
-
-.title-ranking03 {
-	left: 26px;
-	width: 147px;
-	height: 105px;
-}
-
-
 .bg-ranking04 {
 	background-color: #fff;
 	background-image: url("../images/bg-ranking04.png");
@@ -298,3 +254,122 @@ body {
 	background-image: url("../images/bg-ranking08.png");
 	background-size: 70px 67px;
 }
+
+
+/* ranking-main-div */
+/* ranking图片宽高不同时取大的 */
+.ranking01 {
+	top: 165px;
+	left: 27px;
+	width: 1094px;
+	height: 1094px;
+	background-image: url("../images/ranking01.png");
+	background-size: 1094px 1094px;
+}
+.ranking02 {
+	top: 163px;
+	right: 23px;
+	width: 1252px;
+	height: 1252px;
+	background-image: url("../images/ranking02.png");
+	background-size: 1252px 1252px;
+}
+.ranking03 {
+	top: 163px;
+	left: 24px;
+	width: 1238px;
+	height: 1238px;
+	background-image: url("../images/ranking03.png");
+	background-size: 1238px 1238px;
+}
+.ranking04 {
+	top: 163px;
+	right: 24px;
+	width: 933px;
+	height: 933px;
+	background-image: url("../images/ranking04.png");
+	background-size: 933px 933px;
+}
+.ranking05 {
+	top: 163px;
+	left: 24px;
+	width: 1070px;
+	height: 1070px;
+	background-image: url("../images/ranking05.png");
+	background-size: 1070px 1070px;
+}
+.ranking06 {
+	top: 163px;
+	right: 24px;
+	width: 871px;
+	height: 871px;
+	background-image: url("../images/ranking06.png");
+	background-size: 871px 871px;
+}
+.ranking07 {
+	top: 163px;
+	left: 24px;
+	width: 1174px;
+	height: 1174px;
+	background-image: url("../images/ranking07.png");
+	background-size: 1174px 1174px;
+}
+.ranking08 {
+	top: 163px;
+	right: 24px;
+	width: 770px;
+	height: 770px;
+	background-image: url("../images/ranking08.png");
+	background-size: 770px 770px;
+}
+
+
+
+/* title-ranking */
+
+.title-ranking01 {
+	left: 23px;
+	width: 178px;
+	height: 117px;
+}
+.title-ranking02 {
+	right: 26px;
+	width: 210px;
+	height: 159px;
+}
+.title-ranking03 {
+	left: 26px;
+	width: 147px;
+	height: 105px;
+}
+.title-ranking04 {
+	right: 26px;
+	width: 224px;
+	height: 125.5px;
+}
+.title-ranking05 {
+	left: 26px;
+	width: 216px;
+	height: 121px;
+}
+.title-ranking06 {
+	right: 26px;
+	width: 222px;
+	height: 95px;
+}
+.title-ranking07 {
+	left: 26px;
+	width: 209px;
+	height: 116px;
+}
+.title-ranking08 {
+	right: 26px;
+	width: 196px;
+	height: 130px;
+}
+
+
+
+
+
+
