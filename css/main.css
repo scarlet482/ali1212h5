@@ -61,19 +61,21 @@ body {
 
 .icon-odd {
 	left: 50%;
+	top: 157px;
+	overflow: hidden;
 }
 
 .icon-even {
 	right: 50%;
+	top: 298px;
+	overflow: hidden;
 }
 
 /* icon的width和height保留小数点 */
 .icon01 {
-	top: 157px;
 	margin-left: 22px;
 	width: 124px;
 	height: 132.5px;
-	overflow: hidden;
 }
 
 .icon01 img {
@@ -81,15 +83,113 @@ body {
 }
 
 .icon02 {
-	top: 298px;
 	margin-right: 0;
 	width: 197px;
 	height: 160.5px;
-	overflow: hidden;
 }
 
 .icon02 img {
 	width: 197px;
+}
+
+.icon03 {
+	margin-left: 0;
+	width: 82px;
+	height: 135.5px;
+}
+
+.icon03 img {
+	width: 82px;
+}
+
+.icon04 {
+	margin-right: 0;
+	width: 150px;
+	height: 150px;
+}
+
+.icon04 img {
+	width: 150px;
+}
+
+.icon05 {
+	margin-left: 0;
+	width: 113.5px;
+	height: 101px;
+}
+
+.icon05 img {
+	width: 113.5px;
+}
+
+.icon06 {
+	margin-right: 0;
+	width: 80px;
+	height: 150px;
+}
+
+.icon06 img {
+	width: 80px;
+}
+
+.icon07 {
+	margin-left: 0;
+	width: 150px;
+	height: 156px;
+}
+
+.icon07 img {
+	width: 150px;
+}
+
+.icon08 {
+	margin-right: 0;
+	width: 170px;
+	height: 135px;
+}
+
+.icon08 img {
+	width: 170px;
+}
+
+.icon09 {
+	margin-left: 0;
+	width: 134px;
+	height: 55px;
+}
+
+.icon09 img {
+	width: 134px;
+}
+
+.icon10 {
+	margin-right: 0;
+	width: 106.5px;
+	height: 124.5px;
+}
+
+.icon10 img {
+	width: 106.5px;
+}
+
+.icon11 {
+	margin-left: 0;
+	width: 238px;
+	height: 104px;
+}
+
+.icon11 img {
+	width: 238px;
+}
+
+.icon12 {
+	margin-right: 0;
+	width: 150px;
+	height: 150px;
+}
+
+.icon12 img {
+	width: 150px;
 }
 
 .bg-ranking-odd {
