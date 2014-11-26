@@ -11,7 +11,7 @@ body {
 	/*word-break: break-all;*/
 	height: 100%;
 	/*overflow: hidden;*/
-	max-width: 414px;
+	/*max-width: 414px;*/
 }
 
 
@@ -94,11 +94,13 @@ body {
 
 .bg-ranking-odd {
 	right: 0;
+	width: 100%;
 	height: 100%;
 }
 
 .bg-ranking-even {
 	left: 0;
+	width: 100%;
 	height: 100%;
 }
 
