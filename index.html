@@ -1,165 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta charset="UTF-8">
 	<title>ali1212</title>
 	<link rel="stylesheet" href="css/normalize.css">
-  	<link rel="stylesheet" href="css/idangerous.swiper.css">
   	<link rel="stylesheet" href="css/main.css">
   	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/idangerous.swiper.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
-	<script src="js/weixinapi.js"></script>
 </head>
 <body>
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<section class="swiper-slide swiper-no-swiping s0">	
-				<div id="skroller-body">
-					<!-- <div class="title title-taobao" data-0="-webkit-transform: translate3d(-500px, 400px, 0px);" data-1000="-webkit-transform: translate3d(500px, -600px, 0px);">
-						<img src="images/title-taobao.png">
-					</div> -->
-					<!-- <img class="title title-records" src="images/title-records.png" data-_records="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-825="-webkit-transform: translate3d(0px, 0px, 0px);"> -->
+	<div id="skroller-body">
+		<!-- records -->
 
-					<!-- <div class="month month-odd month01" data-_records="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-252="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-825="-webkit-transform: translate3d(0px, -493px, 0px);">
-						<img src="images/month01.png">
-					</div>
+		<div class="bg-records"></div>
 
-					<div class="icon-odd icon01" data-_records="-webkit-transform: translate3d(252px, 80px, 0px);" data-_records-252="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-825="-webkit-transform: translate3d(0px, -493px, 0px);">
-						<img src="images/icon-month01.png">
-					</div>
+		<img class="title-records" src="images/title-records.png" data-_records="-webkit-transform: translate3d(227px, 179px, 0px);" data-_records-252="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-503="-webkit-transform: translate3d(-227px, -179px, 0px);">
 
-					<div class="month month-even month02" data-_records="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-973="-webkit-transform: translate3d(0px, -641px, 0px);">
-						<img src="images/month02.png">
-					</div>
+		<img class="month-odd" src="images/month01.png" data-_records="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-252="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-825="-webkit-transform: translate3d(0px, -493px, 0px);">
 
-					<div class="icon-even icon02" data-_records="-webkit-transform: translate3d(-332px, 80px, 0px);" data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-973="-webkit-transform: translate3d(0px, -641px, 0px);">
-						<img src="images/icon-month02.png" data-_records-332="-webkit-transform: translate3d(0px, -642px, 0px);">
-					</div>
-
-					<div class="month month-odd month03" data-_records-332="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-584="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1157="-webkit-transform: translate3d(0px, -493px, 0px);">
-						<img src="images/month03.png">
-					</div>
-					<div class="month month-even month04" data-_records-332="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-664="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1305="-webkit-transform: translate3d(0px, -641px, 0px);">
-						<img src="images/month04.png">
-					</div>
-					<div class="month month-odd month05" data-_records-664="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-916="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1489="-webkit-transform: translate3d(0px, -493px, 0px);">
-						<img src="images/month05.png">
-					</div>
-					<div class="month month-even month06" data-_records-664="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-996="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1637="-webkit-transform: translate3d(0px, -641px, 0px);">
-						<img src="images/month06.png">
-					</div>
-					<div class="month month-odd month07" data-_records-996="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1248="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1821="-webkit-transform: translate3d(0px, -493px, 0px);">
-						<img src="images/month07.png">
-					</div>
-					<div class="month month-even month08" data-_records-996="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1328="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1969="-webkit-transform: translate3d(0px, -641px, 0px);">
-						<img src="images/month08.png">
-					</div>
-					<div class="month month-odd month09" data-_records-1328="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1580="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1992="-webkit-transform: translate3d(0px, -332px, 0px);">
-						<img src="images/month09.png">
-					</div>
-					<div class="month month-even month10" data-_records-1328="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1660="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1992="-webkit-transform: translate3d(0px, -332px, 0px);">
-						<img src="images/month10.png">
-					</div>
-					<div class="month month-odd month11" data-_records-1660="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1912="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1992="-webkit-transform: translate3d(0px, 0px, 0px);">
-						<img src="images/month11.png">
-					</div>
-					<div class="month month-even month12" data-_records-1660="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1992="-webkit-transform: translate3d(0px, 0px, 0px);">
-						<img src="images/month12.png">
-					</div> -->
-
-					<div class="bg bg-ranking01"
-					data-_records="width: 0%;"
-					data-_records-500="width: 100%;"></div>
-
-					<div class="ranking ranking01"
-					data-_records-500="-webkit-transform: translate3d(387px, 387px, 0px);"
-					data-_records-1500="-webkit-transform: translate3d(-1196px, -1196px, 0px);"></div>
-
-					<img class="title title-ranking01" src="images/title-ranking01.png"
-					data-_records="-webkit-transform: translate3d(352px, 241px, 0px);"
-					data-_records-500="-webkit-transform: translate3d(0px, 0px, 0px);"
-					data-_records-1500="-webkit-transform: translate3d(0px, 0px, 0px);"
-					data-_records-2000="-webkit-transform: translate3d(-398px, -303px, 0px);">
-				</div>
-			</section>
+		<div class="icon-odd icon01" data-_records="-webkit-transform: translate3d(252px, 80px, 0px);" data-_records-252="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-825="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/icon-month01.png"
+			data-_records="-webkit-transform[begin]: translate3d(0px, 0px, 0px);"
+			data-_records-82.5="-webkit-transform[begin]: translate3d(0px, -132.5px, 0px);"
+			data-_records-165="-webkit-transform[begin]: translate3d(0px, -265px, 0px);"
+			data-_records-247.5="-webkit-transform[begin]: translate3d(0px, -397.5px, 0px);"
+			data-_records-330="-webkit-transform[begin]: translate3d(0px, -530px, 0px);"
+			data-_records-412.5="-webkit-transform[begin]: translate3d(0px, -662.5px, 0px);"
+			data-_records-495="-webkit-transform[begin]: translate3d(0px, -795px, 0px);"
+			data-_records-577.5="-webkit-transform[begin]: translate3d(0px, -927.5px, 0px);"
+			data-_records-660="-webkit-transform[begin]: translate3d(0px, -1060px, 0px);"
+			data-_records-742.5="-webkit-transform[begin]: translate3d(0px, -1192.5px, 0px);">
 		</div>
+
+		<img class="month-even" src="images/month02.png" data-_records="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-973="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<div class="icon-even icon02" data-_records="-webkit-transform: translate3d(-332px, 80px, 0px);" data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-973="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/icon-month02.png" data-_records="-webkit-transform: translate3d(0px, -481.5px, 0px);">
+		</div>
+
+		<img class="month-odd" src="images/month03.png" data-_records-332="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-584="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1157="-webkit-transform: translate3d(0px, -493px, 0px);">
+
+		<img class="month-even" src="images/month04.png" data-_records-332="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-664="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1305="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<img class="month-odd" src="images/month05.png" data-_records-664="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-916="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1489="-webkit-transform: translate3d(0px, -493px, 0px);">
+
+		<img class="month-even" src="images/month06.png" data-_records-664="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-996="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1637="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<img class="month-odd" src="images/month07.png" data-_records-996="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1248="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-1821="-webkit-transform: translate3d(0px, -493px, 0px);">
+
+		<img class="month-even" src="images/month08.png" data-_records-996="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1328="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-1969="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<img class="month-odd" src="images/month09.png" data-_records-1328="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1580="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-2153="-webkit-transform: translate3d(0px, -493px, 0px);">
+
+		<img class="month-even" src="images/month10.png" data-_records-1328="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1660="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-2301="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<img class="month-odd" src="images/month11.png" data-_records-1660="-webkit-transform: translate3d(-252px, 332px, 0px);" data-_records-1912="-webkit-transform: translate3d(0px, 80px, 0px);" data-_records-2485="-webkit-transform: translate3d(0px, -493px, 0px);">
+
+		<img class="month-even" src="images/month12.png" data-_records-1660="-webkit-transform: translate3d(332px, 332px, 0px);" data-_records-1992="-webkit-transform: translate3d(0px, 0px, 0px);" data-_records-2633="-webkit-transform: translate3d(0px, -641px, 0px);">
+
+		<!-- ranking -->
+
+		<div class="bg-ranking-odd bg-ranking01"
+		data-_ranking-125="width: 0%;"
+		data-_ranking-250="width: 100%;"></div>
+
+		<div class="ranking01"
+		data-_ranking-125="-webkit-transform: translate3d(389px, 389px, 0px);"
+		data-_ranking-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-750="-webkit-transform: translate3d(-803px, -803px, 0px);"
+		data-_ranking-875="-webkit-transform: translate3d(-1123px, -1123px, 0px);"></div>
+
+		<img class="title-ranking01" src="images/title-ranking01.png"
+		data-_ranking="top: 100%;-webkit-transform: translate3d(160px, 0px, 0px);"
+		data-_ranking-125="top: 50%;-webkit-transform: translate3d(160px, 0px, 0px);"
+		data-_ranking-250="top: 5.46%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-750="top: 5.46%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-875="top: 0%;-webkit-transform: translate3d(-201px, -117px, 0px);">
+
+		<div class="bg-ranking-even bg-ranking02"
+		data-_ranking-875="width: 0%;"
+		data-_ranking-1000="width: 100%;"></div>
+
+		<div class="ranking02"
+		data-_ranking-875="-webkit-transform: translate3d(-393px, 393px, 0px);"
+		data-_ranking-1000="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-1500="-webkit-transform: translate3d(957px, -957px, 0px);"
+		data-_ranking-1625="-webkit-transform: translate3d(1277px, -1277px, 0px);"></div>
+
+		<img class="title-ranking02" src="images/title-ranking02.png"
+		data-_ranking-250="top: 100%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking-375="top: 88.09%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking-750="top: 88.09%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking-875="top: 50%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking-1000="top: 4.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-1500="top: 4.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-1625="top: 0%;-webkit-transform: translate3d(236px, -159px, 0px);">
+
+		<!-- 每个ranking的data-y比上个大750 -->
+
+		<div class="bg-ranking-odd bg-ranking03"
+		data-_ranking-1625="width: 0%;"
+		data-_ranking-1750="width: 100%;"></div>
+
+		<!--
+			关键帧0：414-left/right+2
+			关键帧2：关键帧3-320
+			关键帧3：width+left/right+2
+		-->
+
+		<div class="ranking ranking03"
+		data-_ranking-1625="-webkit-transform: translate3d(392px, 392px, 0px);"
+		data-_ranking-1750="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-2250="-webkit-transform: translate3d(-984px, -984px, 0px);"
+		data-_ranking-2375="-webkit-transform: translate3d(-1304px, -1304px, 0px);"></div>
+
+		<!--
+			关键帧0：top100% transform320-left/right-width+41
+			关键帧1 2：top88.09%
+			关键帧3：top50%
+			关键帧4 5：top根据ai transform0
+			关键帧6：top0 transform x width+left/right y height
+		-->
+
+		<img class="title title-ranking03" src="images/title-ranking03.png"
+		data-_ranking-1000="top: 100%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking-1125="top: 88.09%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking-1500="top: 88.09%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking-1625="top: 50%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking-1750="top: 9.13%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-2250="top: 9.13%;-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-2375="top: 0%;-webkit-transform: translate3d(-173px, -105px, 0px);">
 	</div>
 	<script>
-		function Icon(element, height, frames) {
-			this.element = element;
-			this.height = height;
-			this.frames = frames;
-			this.currentFrame = 0;
-			this.offset = 0;
-		}
-		Icon.prototype.nextFrame = function() {
-			if (this.currentFrame === this.frames - 1) {
-				this.currentFrame = 0;
-			} else {
-				this.currentFrame++;
-			}
-			this.offset = -this.currentFrame * this.height;
-			$(this.element).css("-webkit-transform", "translate3d(0, " + this.offset + "px, 0)");
-		}
-		Icon.prototype.previousFrame = function() {
-			if (this.currentFrame === 0) {
-				this.currentFrame = this.frames - 1;
-			} else {
-				this.currentFrame--;
-			}
-			this.offset = -this.currentFrame * this.height;
-			$(this.element).css("-webkit-transform", "translate3d(0, " + this.offset + "px, 0)");
-		}
-		var iconMonth01 = new Icon('.icon01 img', 132.5, 10),
-		ptouchmoveY = 0,
-		touchmoveY = 0,
-		touchmoveCounter = 0;
 		$(document).ready(function() {
-			var s = skrollr.init({
+			skrollr.init({
 				mobileDeceleration: 1,
 				constants: {
-					records: 0
+					records: 0,
+					ranking: 2633
 				}
 			});
-			var mySwiper = new Swiper('.swiper-container', {
-				mode: 'vertical',
-				noSwiping: true,
-				onSlideChangeStart: function(swiper) {
-					switch(mySwiper.activeIndex) {
-						case 0:
-							break;
-					}
-			    },
-			    onSlideChangeEnd: function(swiper) {
-					switch(mySwiper.activeIndex) {
-						case 0:
-							break;
-
-						case 1:
-							break;
-					}
-				}
-			});
-			// document.addEventListener("touchstart", function(e) {
-			// 	touchmoveY = e.changedTouches[0].clientY;
-			// });
-			// document.addEventListener("touchmove", function(e) {
-			// 	touchmoveCounter++;
-			// 	if (touchmoveCounter % 10 === 0) {
-			// 		ptouchmoveY = touchmoveY;
-			// 		touchmoveY = e.changedTouches[0].clientY;
-			// 		if (touchmoveY < ptouchmoveY) {
-			// 			iconMonth01.nextFrame();
-			// 		} else {
-			// 			iconMonth01.previousFrame();
-			// 		}
-			// 	}
-			// });
-			// document.addEventListener("touchend", function(e) {
-			// 	touchmoveCounter = 0;
-			// });
+		});
+		function onBridgeReady() {
+		    var mainTitle = '我们在这 我们在乎',
+		        mainDesc = '可口可乐中国发布2013年可持续发展报告',
+		        mainURL = 'http://cokecn-cokecn.stor.sinaapp.com/index.html',
+		        mainImgUrl = 'http://cokecn-cokecn.stor.sinaapp.com/images/share_sample.png';
+		    //转发朋友圈
+		    WeixinJSBridge.on('menu:share:timeline', function(e) {
+		        var data = {
+		            img_url: mainImgUrl,
+		            img_width: '120',
+		            img_height: '120',
+		            link: mainURL,
+		            //desc这个属性要加上，虽然不会显示，但是不加暂时会导致无法转发至朋友圈，
+		            desc: mainDesc,
+		            title: mainTitle
+		        };
+		        WeixinJSBridge.invoke('shareTimeline', data, function(res) {
+		            WeixinJSBridge.log(res.err_msg);
+		        });
+		    });
+		    //同步到微博
+		    WeixinJSBridge.on('menu:share:weibo', function() {
+		        WeixinJSBridge.invoke('shareWeibo', {
+		            'content': mainDesc,
+		            'url': mainURL
+		        }, function(res) {
+		            WeixinJSBridge.log(res.err_msg);
+		        });
+		    });
+		    //分享给朋友
+		    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		        WeixinJSBridge.invoke('sendAppMessage', {
+		            img_url: mainImgUrl,
+		            img_width: '120',
+		            img_height: '120',
+		            link: mainURL,
+		            desc: mainDesc,
+		            title: mainTitle
+		        }, function(res) {
+		            WeixinJSBridge.log(res.err_msg)
+		        });
+		    });
+		};
+		//执行
+		document.addEventListener('WeixinJSBridgeReady', function() {
+		    onBridgeReady();
+		    WeixinJSBridge.call('hideToolbar');
 		});
 	</script>
 </body>
