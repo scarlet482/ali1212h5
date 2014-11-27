@@ -23,7 +23,8 @@ body {
 	width: 100%;
 	height: 100%;
 	background-image: url("../images/bg-loading.png");
-	background-size: 348px 842px;
+	background-size: 317px 545px;
+	background-position: center;
 }
 
 .bg-records {
@@ -31,6 +32,7 @@ body {
 	height: 100%;
 	background-image: url("../images/bg-records.png");
 	background-size: 272px 371px;
+	background-position: center;
 	/*-webkit-animation: bg-records 80s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;*/
@@ -46,13 +48,25 @@ body {
 	}
 }
 
-.bg-title-catalog {
+.bg-catalog01 {
+	width: 100%;
+	height: 100%;
+	background-color: #fdb39b;
+}
+
+.bg-catalog02 {
 	width: 100%;
 	height: 100%;
 	background-color: #ff4200;
 }
 
-.bg-catalog {
+.bg-catalog03 {
+	width: 100%;
+	height: 100%;
+	background-color: #fd9326;
+}
+
+.bg-catalog04 {
 	width: 100%;
 	height: 100%;
 	background-color: #ffb800;
@@ -115,12 +129,12 @@ body {
 
 .icon02 {
 	margin-right: 0;
-	width: 197px;
+	width: 191.5px;
 	height: 160.5px;
 }
 
 .icon02 img {
-	width: 197px;
+	width: 191.5px;
 }
 
 .icon03 {
@@ -185,12 +199,12 @@ body {
 
 .icon09 {
 	margin-left: 0;
-	width: 134px;
-	height: 55px;
+	width: 244.5px;
+	height: 169px;
 }
 
 .icon09 img {
-	width: 134px;
+	width: 244.5px;
 }
 
 .icon10 {
