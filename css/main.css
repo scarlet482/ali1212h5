@@ -30,8 +30,8 @@ body {
 }
 #loading img:nth-child(1){
 	position:absolute;
-	height:80px;
-	width:119px;
+	height:78px;
+	width:117px;
 	top:50%;
 	left:50%;
 	margin-top: -167px;
@@ -39,12 +39,30 @@ body {
 }
 #loading img:nth-child(2){
 	position:absolute;
-	height:158px;
-	width:138px;
+	height:162px;
+	width:142px;
 	top:50%;
 	left:50%;
 	margin-top: -79px;
-	margin-left: -69px;
+	margin-left: -71px;
+}
+#loading img:nth-child(3){
+	position:absolute;
+	height:35px;
+	width:83px;
+	top:50%;
+	left:50%;
+	margin-top: 125px;
+	margin-left: -40px;
+}
+.bg-loading img {
+	position:absolute;
+	height:35px;
+	width:83px;
+	top:50%;
+	left:50%;
+	margin-top: 125px;
+	margin-left: -40px;
 }
 .loading-bg{
 	position:absolute;
@@ -93,6 +111,11 @@ body {
 	}
 }
 
+/*.bg-catalog {
+	width: 100%;
+	height: 100%;
+}*/
+
 .bg-catalog01 {
 	width: 100%;
 	height: 100%;
@@ -117,6 +140,17 @@ body {
 	background-color: #ffb800;
 }
 
+p {
+	bottom: 5.67%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+
 .title {
 	right: 50%;
 	margin-right: -135px;
@@ -134,7 +168,7 @@ body {
 	margin-left: -20px;
 	top: 38px;
 	width: 176px;
-	z-index: 1;
+	/*z-index: 1;*/
 }
 
 .month-odd {
@@ -539,6 +573,114 @@ body {
 
 
 
+/* icon-ranking */
+
+.ranking01 div {
+	top: 43px;
+	left: 44px;
+	width: 193.5px;
+	height: 264.5px;
+	overflow: hidden;
+}
+.ranking01 div img {
+	width: 193.5px;
+}
+.ranking02 div {
+	top: 57px;
+	right: 113px;
+	width: 185px;
+	height: 208.5px;
+	overflow: hidden;
+}
+.ranking02 div img {
+	width: 185px;
+}
+.ranking03 div {
+	top: 46px;
+	left: 124px;
+	width: 111.5px;
+	height: 175px;
+	overflow: hidden;
+}
+.ranking03 div img {
+	width: 111.5px;
+}
+.ranking04 div {
+	top: 31px;
+	right: 126px;
+	width: 108px;
+	height: 147px;
+	overflow: hidden;
+}
+.ranking04 div img {
+	width: 108px;
+}
+.ranking05 div {
+	top: 165px;
+	left: 64px;
+	width: 420.5px;
+	height: 150px;
+	overflow: hidden;
+}
+.ranking05 div img {
+	width: 420.5px;
+}
+.ranking06 div {
+	top: 20px;
+	right: 138px;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+.ranking06 div img {
+	width: 150px;
+}
+.ranking07 div {
+	top: 42px;
+	left: 145px;
+	width: 123.5px;
+	height: 150px;
+	overflow: hidden;
+}
+.ranking07 div img {
+	width: 123.5px;
+}
+.ranking08 div {
+	top: 38px;
+	right: 115px;
+	width: 96.5px;
+	height: 77px;
+	overflow: hidden;
+}
+.ranking08 div img {
+	width: 96.5px;
+}
 
 
 
+/* ending */
+
+.ending01 {
+	top: 55%;
+	width: 100%;
+	height: 45%;
+	background-color: #ff4200;
+}
+.ending01 img {
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+}
+.ending02 {
+	bottom: 45%;
+	width: 100%;
+	height: 55%;
+	background-color: #000;
+}
+.ending02 img {
+	bottom: 0;
+	left: 50%;
+	margin-left: -250px;
+	width: 499px;
+}
