@@ -19,6 +19,51 @@ body {
 	position: absolute;
 }
 
+/* loading */
+#loading{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	z-index: 999;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-transition:all 0.5s ease-in-out;
+}
+#loading img:nth-child(1){
+	position:absolute;
+	height:80px;
+	width:119px;
+	top:50%;
+	left:50%;
+	margin-top: -167px;
+	margin-left: -51px;
+}
+#loading img:nth-child(2){
+	position:absolute;
+	height:158px;
+	width:138px;
+	top:50%;
+	left:50%;
+	margin-top: -79px;
+	margin-left: -69px;
+}
+.loading-bg{
+	position:absolute;
+	background-image: url("../images/bg-loading.png");
+	background-color:rgb(252,83,31);
+	background-size: 317px 545px;
+	background-position: center;
+	width:100%;
+	height:100%;
+	z-index: 998;
+}
+/* ready */
+.readyS #loading{
+	-webkit-transform: translate3d(0,-100%,0);
+}
+.readyS .loading-bg{
+	display: none;
+}
+
 .bg-loading {
 	width: 100%;
 	height: 100%;

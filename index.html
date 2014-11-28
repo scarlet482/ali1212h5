@@ -8,8 +8,41 @@
   	<link rel="stylesheet" href="css/main.css">
   	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
+	<script >
+		// onload
+		window.addEventListener("load",function(){
+			console.log('loaded');
+			window.s = skrollr.init({
+				mobileDeceleration: 1,
+				constants: {
+					title: 0,
+					records: 500,
+					ranking: 3375,
+					ranking02: 3375 + 750,
+					ranking03: 3375 + 750 * 2,
+					ranking04: 3375 + 750 * 3,
+					ranking05: 3375 + 750 * 4,
+					ranking06: 3375 + 750 * 5,
+					ranking07: 3375 + 750 * 6,
+					ranking08: 3375 + 750 * 7
+				}
+			});
+			$("body").addClass("readyS");
+			s.animateTo(250,{
+				duration:1000,
+				easing:"swing",
+			})
+		})
+
+	</script>
 </head>
 <body>
+	<div id="loading">
+		<img src = "images/loading-title.png">
+		<img src = "images/loading.gif">	
+	</div>
+	<div class="loading-bg"></div>
+
 	<div id="skroller-body">
 
 		<!-- bg -->
@@ -816,23 +849,6 @@
 
 	</div>
 	<script>
-		$(document).ready(function() {
-			skrollr.init({
-				mobileDeceleration: 1,
-				constants: {
-					title: 0,
-					records: 500,
-					ranking: 3375,
-					ranking02: 3375 + 750,
-					ranking03: 3375 + 750 * 2,
-					ranking04: 3375 + 750 * 3,
-					ranking05: 3375 + 750 * 4,
-					ranking06: 3375 + 750 * 5,
-					ranking07: 3375 + 750 * 6,
-					ranking08: 3375 + 750 * 7
-				}
-			});
-		});
 		function onBridgeReady() {
 		    var mainTitle = '我们在这 我们在乎',
 		        mainDesc = '可口可乐中国发布2013年可持续发展报告',
