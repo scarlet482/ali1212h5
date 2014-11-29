@@ -8,56 +8,76 @@
   	<link rel="stylesheet" href="css/main.css">
   	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
-	
+	<script src="js/weixinapi.js"></script>
 </head>
 <body>
-
-	<!-- loading -->
-	
-	<div id="loading">
-		<img src = "images/loading-title.png">
-		<img src = "images/loading.gif">
-		<img src = "images/bg-logo.png">
+	<div id="loading"
+	data-_title-100="-webkit-transform: translate3d(0, 0%, 0);"
+	data-_title-250="-webkit-transform: translate3d(0, -100%, 0);">
+		<img src="images/loading-title.png">
+		<img src="images/loading01.gif">
+		<img src="images/loading02.gif">
 	</div>
-	<div class="loading-bg"></div>
-
+	<div class="loading-bg"
+	data-_title-100="-webkit-transform: translate3d(0, 0%, 0);"
+	data-_title-250="-webkit-transform: translate3d(0, -100%, 0);"></div>
 
 	<div id="skroller-body">
 
 		<!-- bg -->
 
-		<div class="bg-loading"
-		data-_title-250="opacity[begin]: 1;"
-		data-_title-500="opacity[begin]: 0;">
-			<img src = "images/bg-logo.png">
+		<div class="bg-catalog04"
+		data-_title="opacity[begin]: 0;"
+		data-_records-3000="opacity[begin]: 1;">
+		</div>
+
+		<div class="bg-catalog02"
+		data-_title="opacity[begin]: 0;"
+		data-_records-2500="opacity[begin]: 1;"
+		data-_records-3000="opacity[begin]: 0;">
+			<p
+			data-_records-2500="opacity[begin]: 1;"
+			data-_records-2750="opacity[begin]: 0;">
+				淘宝上搜索以下商品<br>开启一个万能的世界
+			</p>
 		</div>
 
 		<div class="bg-records"
-		data-_title-250="opacity[begin]: 0;"
-		data-_title-500="opacity[begin]: 1;"
-		data-_records-2500="opacity[begin]: 1;"
-		data-_records-2750="opacity[begin]: 0;"></div>
+		data-_title="opacity[begin]: 0;"
+		data-_title-750="opacity[begin]: 1;"
+		data-_records-2500="opacity[begin]: 0;"></div>
+
+		<div class="bg-loading"
+		data-_title="opacity[begin]: 1;"
+		data-_title-750="opacity[begin]: 0;">
+			<img src="images/bg-logo.png">
+		</div>
 
 		<!-- title -->
 
 		<div class="title">
 			<img src="images/title01.png"
-			data-_title-50="-webkit-transform: translate3d(-100%, 100%, 0);"
-			data-_title-250="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_title-450="-webkit-transform: translate3d(103%, -103%, 0);">
+			data-_title-50="-webkit-transform: translate3d(-340px, 360px, 0);"
+			data-_title-250="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-500="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-700="-webkit-transform: translate3d(351px, -371px, 0);">
 			<img src="images/title02.png"
-			data-_title-150="-webkit-transform: translate3d(-100%, 100%, 0);"
-			data-_title-250="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_title-350="-webkit-transform: translate3d(103%, -103%, 0);">
+			data-_title-150="-webkit-transform: translate3d(-340px, 360px, 0);"
+			data-_title-250="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-500="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-600="-webkit-transform: translate3d(351px, -371px, 0);">
 			<img src="images/title03.png"
-			data-_title-200="-webkit-transform: translate3d(-100%, 100%, 0);"
-			data-_title-250="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_title-300="-webkit-transform: translate3d(103%, -103%, 0);">
+			data-_title-200="-webkit-transform: translate3d(-340px, 360px, 0);"
+			data-_title-250="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-500="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-550="-webkit-transform: translate3d(351px, -371px, 0);">
 			<img src="images/title04.png"
-			data-_title-100="-webkit-transform: translate3d(-100%, 100%, 0);"
-			data-_title-250="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_title-400="-webkit-transform: translate3d(103%, -103%, 0);">
+			data-_title-100="-webkit-transform: translate3d(-340px, 360px, 0);"
+			data-_title-250="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-500="-webkit-transform: translate3d(0px, 0px, 0);"
+			data-_title-650="-webkit-transform: translate3d(351px, -371px, 0);">
 		</div>
+		
 		
 		<!-- records -->
 
@@ -74,10 +94,12 @@
 			<img src="images/d-icon-month01.png">
 		</div>
 
-		<img class="month-odd" src="images/month01.png"
+		<div class="month-odd"
 		data-_records="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-252="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-825="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/d-month01.png">
+		</div>
 
 		<div class="icon-even icon02"
 		data-_records-122="-webkit-transform: translate3d(-210px, 210px, 0px);"
@@ -86,10 +108,12 @@
 			<img src="images/d-icon-month02.png">
 		</div>
 
-		<img class="month-even" src="images/month02.png"
+		<div class="month-even"
 		data-_records="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-332="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_records-973="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/d-month02.png">
+		</div>
 
 		<div class="icon-odd icon03"
 		data-_records-374="-webkit-transform: translate3d(210px, 290px, 0px);"
@@ -98,10 +122,12 @@
 			<img src="images/d-icon-month03.png">
 		</div>
 
-		<img class="month-odd" src="images/month03.png"
+		<div class="month-odd"
 		data-_records-332="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-584="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-1157="-webkit-transform: translate3d(0px, -493px, 0px);">
+			 <img src="images/d-month03.png">
+		</div>
 
 		<div class="icon-even icon04"
 		data-_records-454="-webkit-transform: translate3d(-210px, 210px, 0px);"
@@ -110,10 +136,12 @@
 			<img src="images/d-icon-month04.png">
 		</div>
 
-		<img class="month-even" src="images/month04.png"
+		<div class="month-even"
 		data-_records-332="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-664="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_records-1305="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/d-month04.png">
+		</div>
 
 		<div class="icon-odd icon05"
 		data-_records-706="-webkit-transform: translate3d(210px, 290px, 0px);"
@@ -122,10 +150,12 @@
 			<img src="images/d-icon-month05.png">
 		</div>
 
-		<img class="month-odd" src="images/month05.png"
+		<div class="month-odd"
 		data-_records-664="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-916="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-1489="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/d-month05.png">
+		</div>
 
 		<div class="icon-even icon06"
 		data-_records-786="-webkit-transform: translate3d(-210px, 210px, 0px);"
@@ -134,10 +164,12 @@
 			<img src="images/d-icon-month06.png">
 		</div>
 
-		<img class="month-even" src="images/month06.png"
+		<div class="month-even"
 		data-_records-664="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-996="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_records-1637="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/d-month06.png">
+		</div>
 
 		<div class="icon-odd icon07"
 		data-_records-1038="-webkit-transform: translate3d(210px, 290px, 0px);"
@@ -146,10 +178,12 @@
 			<img src="images/d-icon-month07.png">
 		</div>
 
-		<img class="month-odd" src="images/month07.png"
+		<div class="month-odd"
 		data-_records-996="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-1248="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-1821="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/d-month07.png">
+		</div>
 
 		<div class="icon-even icon08"
 		data-_records-1118="-webkit-transform: translate3d(-250px, 210px, 0px);"
@@ -158,10 +192,12 @@
 			<img src="images/d-icon-month08.png">
 		</div>
 
-		<img class="month-even" src="images/month08.png"
+		<div class="month-even"
 		data-_records-996="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-1328="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_records-1969="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/d-month08.png">
+		</div>
 
 		<div class="icon-odd icon09"
 		data-_records-1370="-webkit-transform: translate3d(210px, 290px, 0px);"
@@ -170,10 +206,12 @@
 			<img src="images/d-icon-month09.png">
 		</div>
 
-		<img class="month-odd" src="images/month09.png"
+		<div class="month-odd"
 		data-_records-1328="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-1580="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-2153="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/d-month09.png">
+		</div>
 
 		<div class="icon-even icon10"
 		data-_records-1450="-webkit-transform: translate3d(-210px, 210px, 0px);"
@@ -182,22 +220,28 @@
 			<img src="images/d-icon-month10.png">
 		</div>
 
-		<img class="month-even" src="images/month10.png"
+		<div class="month-even"
 		data-_records-1328="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-1660="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_records-2301="-webkit-transform: translate3d(0px, -641px, 0px);">
+			<img src="images/d-month10.png">
+		</div>
 
-		<div class="icon-odd icon11"
+		<!-- Android下使用d-icon11 iPhone下使用icon11 -->
+
+		<div class="icon-odd d-icon11"
 		data-_records-1702="-webkit-transform: translate3d(210px, 290px, 0px);"
 		data-_records-1912="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-2312="-webkit-transform: translate3d(0px, -320px, 0px);">
 			<img src="images/d-icon-month11.png">
 		</div>
 
-		<img class="month-odd" src="images/month11.png"
+		<div class="month-odd"
 		data-_records-1660="-webkit-transform: translate3d(-252px, 332px, 0px);"
 		data-_records-1912="-webkit-transform: translate3d(0px, 80px, 0px);"
 		data-_records-2485="-webkit-transform: translate3d(0px, -493px, 0px);">
+			<img src="images/d-month11.png">
+		</div>
 
 		<div class="icon-even icon12"
 		data-_records-1782="-webkit-transform: translate3d(-210px, 210px, 0px);"
@@ -206,100 +250,78 @@
 			<img src="images/d-icon-month12.png">
 		</div>
 
-		<img class="month-even" src="images/month12.png"
+		<!-- month12处理方式不同 -->
+
+		<div class="month-even" id="month12"
+		data-_title="opacity[begin]: 1;"
 		data-_records-1660="-webkit-transform: translate3d(332px, 332px, 0px);"
 		data-_records-1992="-webkit-transform: translate3d(0px, 0px, 0px);"
-		data-_records-2633="-webkit-transform: translate3d(0px, -641px, 0px);">
-
-		<!-- bg -->
-
-		<!-- <div class="bg-catalog"
-		data-_records-2400="opacity[begin]: 0;"
-		data-_records-2450="opacity[begin]: 1;background-color[begin]: #fdb39b;"
-		data-_records-2500="opacity[begin]: 1;background-color[begin]: #ff4200;"
-		data-_records-2625="opacity[begin]: 1;background-color[begin]: #fd9326;"
-		data-_records-2750="opacity[begin]: 1;background-color[begin]: #ffb800;">
-			<p>淘宝上搜索以下商品<br>开启一个万能的世界</p>
-		</div> -->
-
-		<!-- <div class="bg-catalog01"
-		data-_records-2400="opacity[begin]: 0;"
-		data-_records-2450="opacity[begin]: 1;">
-			<p>淘宝上搜索以下商品<br>开启一个万能的世界</p>
-		</div> -->
-
-		<div class="bg-catalog02"
-		data-_records-2450="opacity[begin]: 0;"
-		data-_records-2500="opacity[begin]: 1;">
-			<p>淘宝上搜索以下商品<br>开启一个万能的世界</p>
-		</div>
-
-		<!-- <div class="bg-catalog03"
-		data-_records-2500="opacity[begin]: 0;"
-		data-_records-2625="opacity[begin]: 1;">
-		</div> -->
-
-		<div class="bg-catalog04"
-		data-_records-2625="opacity[begin]: 0;"
-		data-_records-2750="opacity[begin]: 1;">
+		data-_records-2500="opacity[begin]: 0;-webkit-transform: translate3d(0px, -508px, 0px);"
+		data-emit-events>
+			<img src="images/d-month12.png">
 		</div>
 
 		<!-- title-catalog -->
 
 		<div class="title-catalog">
 			<img src="images/title-catalog01.png"
-			data-_records-2100="-webkit-transform: translate3d(100%, 100%, 0);"
+			data-_records-2100="-webkit-transform: translate3d(633px, 941px, 0);"
 			data-_records-2500="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-2900="-webkit-transform: translate3d(-110%, -110%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3150="-webkit-transform: translate3d(-697px, -1036px, 0);">
 			<img src="images/title-catalog02.png"
-			data-_records-2300="-webkit-transform: translate3d(100%, 100%, 0);"
+			data-_records-2300="-webkit-transform: translate3d(633px, 941px, 0);"
 			data-_records-2500="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-2700="-webkit-transform: translate3d(-110%, -103%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-2950="-webkit-transform: translate3d(-697px, -1036px, 0);">
 			<img src="images/title-catalog03.png"
-			data-_records-2400="-webkit-transform: translate3d(100%, 100%, 0);"
+			data-_records-2400="-webkit-transform: translate3d(633px, 941px, 0);"
 			data-_records-2500="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-2600="-webkit-transform: translate3d(-103%, -110%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-2850="-webkit-transform: translate3d(-697px, -1036px, 0);">
 			<img src="images/title-catalog04.png"
-			data-_records-2200="-webkit-transform: translate3d(100%, 100%, 0);"
+			data-_records-2200="-webkit-transform: translate3d(633px, 941px, 0);"
 			data-_records-2500="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-2800="-webkit-transform: translate3d(-110%, -110%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3050="-webkit-transform: translate3d(-697px, -1036px, 0);">
 		</div>
+		
 
 		<!-- catalog -->
 
 		<div class="catalog">
 			<img src="images/title-ranking01.png"
-			data-_records-2500="-webkit-transform: translate3d(180%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(-250%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(180%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(-250%, -100%, 0);">
 			<img src="images/title-ranking02.png"
-			data-_records-2500="-webkit-transform: translate3d(-160%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(230%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(-160%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(230%, -100%, 0);">
 			<img src="images/title-ranking03.png"
-			data-_records-2500="-webkit-transform: translate3d(220%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(-290%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(220%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(-290%, -100%, 0);">
 			<img src="images/title-ranking04.png"
-			data-_records-2500="-webkit-transform: translate3d(-150%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(220%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(-150%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(220%, -100%, 0);">
 			<img src="images/title-ranking05.png"
-			data-_records-2500="-webkit-transform: translate3d(150%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(-230%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(150%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(-230%, -100%, 0);">
 			<img src="images/title-ranking06.png"
-			data-_records-2500="-webkit-transform: translate3d(-150%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(220%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(-150%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(220%, -100%, 0);">
 			<img src="images/title-ranking07.png"
-			data-_records-2500="-webkit-transform: translate3d(150%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(-240%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(150%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(-240%, -100%, 0);">
 			<img src="images/title-ranking08.png"
-			data-_records-2500="-webkit-transform: translate3d(-170%, 100%, 0);"
-			data-_records-2750="-webkit-transform: translate3d(0%, 0%, 0);"
-			data-_records-3000="-webkit-transform: translate3d(230%, -100%, 0);">
+			data-_records-2750="-webkit-transform: translate3d(-170%, 100%, 0);"
+			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
+			data-_records-3250="-webkit-transform: translate3d(240%, -100%, 0);">
 		</div>
 
 		<!-- ranking -->
@@ -307,15 +329,16 @@
 		<div class="bg-ranking bg-ranking01"
 		data-_ranking-125="webkit-transform: translate3d(100%, 0, 0);"
 		data-_ranking-250="webkit-transform: translate3d(0, 0, 0);"></div>
+		
+		<!-- 增加第3帧 data-y是第2帧加250 -->
 
 		<div class="ranking01"
 		data-_ranking-125="-webkit-transform: translate3d(389px, 389px, 0px);"
 		data-_ranking-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking-750="-webkit-transform: translate3d(-803px, -803px, 0px);"
 		data-_ranking-875="-webkit-transform: translate3d(-1123px, -1123px, 0px);">
-			<div>
-				<img src="images/d-icon-ranking01.png">
-			</div>
+			<img src="images/d-ranking01.png">
 		</div>
 
 		<img class="title-ranking01" src="images/title-ranking01.png"
@@ -334,16 +357,17 @@
 		<div class="ranking02"
 		data-_ranking02-125="-webkit-transform: translate3d(-393px, 393px, 0px);"
 		data-_ranking02-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking02-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking02-750="-webkit-transform: translate3d(957px, -957px, 0px);"
 		data-_ranking02-875="-webkit-transform: translate3d(1277px, -1277px, 0px);">
-			<div>
-				<img src="images/d-icon-ranking02.png">
-			</div>
+			<img src="images/d-ranking02.png">
 		</div>
 
+		<!-- 第1 2帧data-y绝对值减250 -->
+
 		<img class="title-ranking02" src="images/title-ranking02.png"
-		data-_ranking02--500="top: 100%;-webkit-transform: translate3d(-125px, 0px, 0px);"
-		data-_ranking02--375="top: 88.09%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking02--250="top: 100%;-webkit-transform: translate3d(-125px, 0px, 0px);"
+		data-_ranking02--125="top: 88.09%;-webkit-transform: translate3d(-125px, 0px, 0px);"
 		data-_ranking02-0="top: 88.09%;-webkit-transform: translate3d(-125px, 0px, 0px);"
 		data-_ranking02-125="top: 50%;-webkit-transform: translate3d(-125px, 0px, 0px);"
 		data-_ranking02-250="top: 3%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -367,11 +391,10 @@
 		<div class="ranking03"
 		data-_ranking03-125="-webkit-transform: translate3d(392px, 392px, 0px);"
 		data-_ranking03-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking03-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking03-750="-webkit-transform: translate3d(-944px, -944px, 0px);"
 		data-_ranking03-875="-webkit-transform: translate3d(-1264px, -1264px, 0px);">
-			<div>
-				<img src="images/d-icon-ranking03.png">
-			</div>
+			<img src="images/d-ranking03.png">
 		</div>
 
 		<!--
@@ -383,8 +406,8 @@
 		-->
 
 		<img class="title-ranking03" src="images/title-ranking03.png"
-		data-_ranking03--500="top: 100%;-webkit-transform: translate3d(188px, 0px, 0px);"
-		data-_ranking03--375="top: 88.09%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking03--250="top: 100%;-webkit-transform: translate3d(188px, 0px, 0px);"
+		data-_ranking03--125="top: 88.09%;-webkit-transform: translate3d(188px, 0px, 0px);"
 		data-_ranking03-0="top: 88.09%;-webkit-transform: translate3d(188px, 0px, 0px);"
 		data-_ranking03-125="top: 50%;-webkit-transform: translate3d(188px, 0px, 0px);"
 		data-_ranking03-250="top: 9.13%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -400,16 +423,15 @@
 		<div class="ranking04"
 		data-_ranking04-125="-webkit-transform: translate3d(-393px, 393px, 0px);"
 		data-_ranking04-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking04-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking04-750="-webkit-transform: translate3d(639px, -639px, 0px);"
 		data-_ranking04-875="-webkit-transform: translate3d(959px, -959px, 0px);">
-			<div>
-				<img src="images/d-icon-ranking04.png">
-			</div>
+			<img src="images/d-ranking04.png">
 		</div>
 
 		<img class="title-ranking04" src="images/title-ranking04.png"
-		data-_ranking04--500="top: 100%;-webkit-transform: translate3d(-111px, 0px, 0px);"
-		data-_ranking04--375="top: 88.09%;-webkit-transform: translate3d(-111px, 0px, 0px);"
+		data-_ranking04--250="top: 100%;-webkit-transform: translate3d(-111px, 0px, 0px);"
+		data-_ranking04--125="top: 88.09%;-webkit-transform: translate3d(-111px, 0px, 0px);"
 		data-_ranking04-0="top: 88.09%;-webkit-transform: translate3d(-111px, 0px, 0px);"
 		data-_ranking04-125="top: 50%;-webkit-transform: translate3d(-111px, 0px, 0px);"
 		data-_ranking04-250="top: 5.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -425,16 +447,18 @@
 		<div class="ranking05"
 		data-_ranking05-125="-webkit-transform: translate3d(392px, 392px, 0px);"
 		data-_ranking05-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking05-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking05-750="-webkit-transform: translate3d(-776px, -776px, 0px);"
 		data-_ranking05-875="-webkit-transform: translate3d(-1096px, -1096px, 0px);">
+			<img src="images/d-ranking05.png">
 			<div>
 				<img src="images/d-icon-ranking05.png">
 			</div>
 		</div>
 
 		<img class="title-ranking05" src="images/title-ranking05.png"
-		data-_ranking05--500="top: 100%;-webkit-transform: translate3d(112px, 0px, 0px);"
-		data-_ranking05--375="top: 88.09%;-webkit-transform: translate3d(112px, 0px, 0px);"
+		data-_ranking05--250="top: 100%;-webkit-transform: translate3d(112px, 0px, 0px);"
+		data-_ranking05--125="top: 88.09%;-webkit-transform: translate3d(112px, 0px, 0px);"
 		data-_ranking05-0="top: 88.09%;-webkit-transform: translate3d(112px, 0px, 0px);"
 		data-_ranking05-125="top: 50%;-webkit-transform: translate3d(112px, 0px, 0px);"
 		data-_ranking05-250="top: 7%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -450,16 +474,18 @@
 		<div class="ranking06"
 		data-_ranking06-125="-webkit-transform: translate3d(-393px, 393px, 0px);"
 		data-_ranking06-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking06-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking06-750="-webkit-transform: translate3d(577px, -577px, 0px);"
 		data-_ranking06-875="-webkit-transform: translate3d(897px, -897px, 0px);">
+			<img src="images/d-ranking06.png">
 			<div>
 				<img src="images/d-icon-ranking06.png">
 			</div>
 		</div>
 
 		<img class="title-ranking06" src="images/title-ranking06.png"
-		data-_ranking06--500="top: 100%;-webkit-transform: translate3d(-104px, 0px, 0px);"
-		data-_ranking06--375="top: 88.09%;-webkit-transform: translate3d(-104px, 0px, 0px);"
+		data-_ranking06--250="top: 100%;-webkit-transform: translate3d(-104px, 0px, 0px);"
+		data-_ranking06--125="top: 88.09%;-webkit-transform: translate3d(-104px, 0px, 0px);"
 		data-_ranking06-0="top: 88.09%;-webkit-transform: translate3d(-104px, 0px, 0px);"
 		data-_ranking06-125="top: 50%;-webkit-transform: translate3d(-104px, 0px, 0px);"
 		data-_ranking06-250="top: 7.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -474,16 +500,15 @@
 		<div class="ranking07"
 		data-_ranking07-125="-webkit-transform: translate3d(392px, 392px, 0px);"
 		data-_ranking07-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking07-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking07-750="-webkit-transform: translate3d(-880px, -880px, 0px);"
 		data-_ranking07-875="-webkit-transform: translate3d(-1200px, -1200px, 0px);">
-			<div>
-				<img src="images/d-icon-ranking07.png">
-			</div>
+			<img src="images/d-ranking07.png">
 		</div>
 
 		<img class="title-ranking07" src="images/title-ranking07.png"
-		data-_ranking07--500="top: 100%;-webkit-transform: translate3d(115px, 0px, 0px);"
-		data-_ranking07--375="top: 88.09%;-webkit-transform: translate3d(115px, 0px, 0px);"
+		data-_ranking07--250="top: 100%;-webkit-transform: translate3d(115px, 0px, 0px);"
+		data-_ranking07--125="top: 88.09%;-webkit-transform: translate3d(115px, 0px, 0px);"
 		data-_ranking07-0="top: 88.09%;-webkit-transform: translate3d(115px, 0px, 0px);"
 		data-_ranking07-125="top: 50%;-webkit-transform: translate3d(115px, 0px, 0px);"
 		data-_ranking07-250="top: 7.13%;-webkit-transform: translate3d(0px, 0px, 0px);"
@@ -499,121 +524,82 @@
 		<div class="ranking08"
 		data-_ranking08-125="-webkit-transform: translate3d(-393px, 393px, 0px);"
 		data-_ranking08-250="-webkit-transform: translate3d(0px, 0px, 0px);"
+		data-_ranking08-500="-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking08-750="-webkit-transform: translate3d(476px, -476px, 0px);"
 		data-_ranking08-875="-webkit-transform: translate3d(796px, -796px, 0px);">
+			<img src="images/d-ranking08.png">
 			<div>
 				<img src="images/d-icon-ranking08.png">
 			</div>
 		</div>
 
 		<img class="title-ranking08" src="images/title-ranking08.png"
-		data-_ranking08--500="top: 100%;-webkit-transform: translate3d(-120px, 0px, 0px);"
-		data-_ranking08--375="top: 88.09%;-webkit-transform: translate3d(-120px, 0px, 0px);"
+		data-_ranking08--250="top: 100%;-webkit-transform: translate3d(-120px, 0px, 0px);"
+		data-_ranking08--125="top: 88.09%;-webkit-transform: translate3d(-120px, 0px, 0px);"
 		data-_ranking08-0="top: 88.09%;-webkit-transform: translate3d(-120px, 0px, 0px);"
 		data-_ranking08-125="top: 50%;-webkit-transform: translate3d(-120px, 0px, 0px);"
 		data-_ranking08-250="top: 6.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking08-750="top: 6.31%;-webkit-transform: translate3d(0px, 0px, 0px);"
 		data-_ranking08-825="top: 0%;-webkit-transform: translate3d(190px, -130px, 0px);">
 
+		<!-- arrow -->
+
+		<img class="arrow" src="images/arrow.gif">
+
 		<!-- ending -->
 
 		<div class="ending02"
-		data-_ranking08-798="display:none"
-		data-_ranking08-799="display:block"
+		data-_ranking08-798="display:none;"
+		data-_ranking08-799="display:block;"
 		data-_ranking08-800="-webkit-transform: translate3d(0, 190%, 0);"
-		data-_ranking08-875="-webkit-transform: translate3d(0, 0%, 0);">
+		data-_ranking08-900="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending02.png">
 		</div>
+
 		<div class="ending01"
-		data-_ranking08-748="display:none"
-		data-_ranking08-749="display:block"
+		data-_ranking08-748="display:none;"
+		data-_ranking08-749="display:block;"
 		data-_ranking08-750="-webkit-transform: translate3d(0, 110%, 0);"
-		data-_ranking08-825="-webkit-transform: translate3d(0, 0%, 0);">
+		data-_ranking08-850="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending01.png">
 		</div>
 
+		<img class="ending03" src="images/ending03.png"
+		data-_ranking08-848="display:none;"
+		data-_ranking08-849="display:block;"
+		data-_ranking08-850="-webkit-transform: translate3d(0, 2000%, 0);"
+		data-_ranking08-950="-webkit-transform: translate3d(0, 0%, 0);">
 	</div>
-
-	<script >
-		// onload
-		window.addEventListener("load",function(){
+	<script>
+		window.addEventListener("load", function() {
 			$("body").addClass("readyS");
-			setTimeout(function(){
-					s.animateTo(250,{
-					duration:1000,
-					easing:"swing",
+			setTimeout(function() {
+				s.animateTo(100, {
+					duration: 1000,
+					easing: "swing",
 				})
-			},100)
-			
+			}, 100);
 		})
 
-		$().ready(function(){
+		$().ready(function() {
 			window.s = skrollr.init({
+				smoothScrolling: true,
+  				smoothScrollingDuration: 200,
 				mobileDeceleration: 1,
 				constants: {
 					title: 0,
-					records: 500,
-					ranking: 3375,
-					ranking02: 3375 + 750,
-					ranking03: 3375 + 750 * 2,
-					ranking04: 3375 + 750 * 3,
-					ranking05: 3375 + 750 * 4,
-					ranking06: 3375 + 750 * 5,
-					ranking07: 3375 + 750 * 6,
-					ranking08: 3375 + 750 * 7
-					// ranking08: 0
+					records: 750,
+					ranking: 3875,
+					ranking02: 3875 + 750,
+					ranking03: 3875 + 750 * 2,
+					ranking04: 3875 + 750 * 3,
+					ranking05: 3875 + 750 * 4,
+					ranking06: 3875 + 750 * 5,
+					ranking07: 3875 + 750 * 6,
+					ranking08: 3875 + 750 * 7
 				}
 			});
 		})
-
 	</script>
-	<script>
-		function onBridgeReady() {
-		    var mainTitle = '我们在这 我们在乎',
-		        mainDesc = '可口可乐中国发布2013年可持续发展报告',
-		        mainURL = 'http://cokecn-cokecn.stor.sinaapp.com/index.html',
-		        mainImgUrl = 'http://cokecn-cokecn.stor.sinaapp.com/images/share_sample.png';
-		    //转发朋友圈
-		    WeixinJSBridge.on('menu:share:timeline', function(e) {
-		        var data = {
-		            img_url: mainImgUrl,
-		            img_width: '120',
-		            img_height: '120',
-		            link: mainURL,
-		            //desc这个属性要加上，虽然不会显示，但是不加暂时会导致无法转发至朋友圈，
-		            desc: mainDesc,
-		            title: mainTitle
-		        };
-		        WeixinJSBridge.invoke('shareTimeline', data, function(res) {
-		            WeixinJSBridge.log(res.err_msg);
-		        });
-		    });
-		    //同步到微博
-		    WeixinJSBridge.on('menu:share:weibo', function() {
-		        WeixinJSBridge.invoke('shareWeibo', {
-		            'content': mainDesc,
-		            'url': mainURL
-		        }, function(res) {
-		            WeixinJSBridge.log(res.err_msg);
-		        });
-		    });
-		    //分享给朋友
-		    WeixinJSBridge.on('menu:share:appmessage', function(argv) {
-		        WeixinJSBridge.invoke('sendAppMessage', {
-		            img_url: mainImgUrl,
-		            img_width: '120',
-		            img_height: '120',
-		            link: mainURL,
-		            desc: mainDesc,
-		            title: mainTitle
-		        }, function(res) {
-		            WeixinJSBridge.log(res.err_msg)
-		        });
-		    });
-		};
-		//执行
-		document.addEventListener('WeixinJSBridgeReady', function() {
-		    onBridgeReady();
-		    WeixinJSBridge.call('hideToolbar');
-		});
-	</script
+</body>
+</html>
