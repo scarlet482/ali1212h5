@@ -518,12 +518,15 @@
 		<!-- ending -->
 
 		<div class="ending02"
+		data-_ranking08-798="display:none"
+		data-_ranking08-799="display:block"
 		data-_ranking08-800="-webkit-transform: translate3d(0, 190%, 0);"
 		data-_ranking08-875="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending02.png">
 		</div>
 		<div class="ending01"
-		
+		data-_ranking08-748="display:none"
+		data-_ranking08-749="display:block"
 		data-_ranking08-750="-webkit-transform: translate3d(0, 110%, 0);"
 		data-_ranking08-825="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending01.png">
@@ -535,10 +538,13 @@
 		// onload
 		window.addEventListener("load",function(){
 			$("body").addClass("readyS");
-			s.animateTo(250,{
-				duration:1000,
-				easing:"swing",
-			})
+			setTimeout(function(){
+					s.animateTo(250,{
+					duration:1000,
+					easing:"swing",
+				})
+			},100)
+			
 		})
 
 		$().ready(function(){
