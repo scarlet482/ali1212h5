@@ -3,24 +3,29 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<meta charset="UTF-8">
-	<title>ali1212</title>
+	<title>2014“无能”的淘宝</title>
 	<link rel="stylesheet" href="css/normalize.css">
   	<link rel="stylesheet" href="css/main.css">
   	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script src="js/weixinapi.js"></script>
 </head>
-<body -webkit-touch-callout="none">
+<body>
 	<div id="loading"
-	data-_title-100="-webkit-transform: translate3d(0, 0%, 0);"
+	data-_title="-webkit-transform: translate3d(0, 0%, 0);"
 	data-_title-250="-webkit-transform: translate3d(0, -100%, 0);">
 		<img src="images/loading-title.png">
 		<img src="images/loading01.gif">
 		<img src="images/loading02.gif">
 	</div>
 	<div class="loading-bg"
-	data-_title-100="-webkit-transform: translate3d(0, 0%, 0);"
+	data-_title="-webkit-transform: translate3d(0, 0%, 0);"
 	data-_title-250="-webkit-transform: translate3d(0, -100%, 0);"></div>
+	<div class="bg-loading"
+	data-_title="opacity[begin]: 1;"
+	data-_title-750="opacity[begin]: 0;">
+		<img src="images/bg-logo.png">
+	</div>
 
 	<div id="skroller-body">
 
@@ -35,23 +40,12 @@
 		data-_title="opacity[begin]: 0;"
 		data-_records-2500="opacity[begin]: 1;"
 		data-_records-3000="opacity[begin]: 0;">
-			<p
-			data-_records-2500="opacity[begin]: 1;"
-			data-_records-2750="opacity[begin]: 0;">
-				淘宝上搜索以下商品<br>开启一个万能的世界
-			</p>
 		</div>
 
 		<div class="bg-records"
 		data-_title="opacity[begin]: 0;"
 		data-_title-750="opacity[begin]: 1;"
 		data-_records-2500="opacity[begin]: 0;"></div>
-
-		<div class="bg-loading"
-		data-_title="opacity[begin]: 1;"
-		data-_title-750="opacity[begin]: 0;">
-			<img src="images/bg-logo.png">
-		</div>
 
 		<!-- title -->
 
@@ -682,6 +676,12 @@
 			data-_records-2750="-webkit-transform: translate3d(-170%, 100%, 0);"
 			data-_records-3000="-webkit-transform: translate3d(0%, 0%, 0);"
 			data-_records-3250="-webkit-transform: translate3d(240%, -100%, 0);">
+			<p
+			data-_title="opacity[begin]: 0;"
+			data-_records-2500="opacity[begin]: 1;"
+			data-_records-2750="opacity[begin]: 0;">
+				淘宝上搜索以下商品<br>开启一个万能的世界
+			</p>
 		</div>
 
 		<!-- ranking -->
@@ -999,56 +999,46 @@
 		<!-- ending -->
 
 		<div class="ending02"
-		data-_ranking08-798="display:none;"
-		data-_ranking08-799="display:block;"
-		data-_ranking08-800="-webkit-transform: translate3d(0, 190%, 0);"
+		data-_ranking08="opacity[begin]: 0;"
+		data-_ranking08-800="opacity[begin]: 1;-webkit-transform: translate3d(0, 190%, 0);"
 		data-_ranking08-900="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending02.png">
 		</div>
 
 		<div class="ending01"
-		data-_ranking08-748="display:none;"
-		data-_ranking08-749="display:block;"
-		data-_ranking08-750="-webkit-transform: translate3d(0, 110%, 0);"
+		data-_ranking08="opacity[begin]: 0;"
+		data-_ranking08-750="opacity[begin]: 1;-webkit-transform: translate3d(0, 110%, 0);"
 		data-_ranking08-850="-webkit-transform: translate3d(0, 0%, 0);">
 			<img src="images/ending01.png">
 		</div>
 
 		<img class="ending03" src="images/ending03.png"
-		data-_ranking08-848="display:none;"
-		data-_ranking08-849="display:block;"
-		data-_ranking08-850="-webkit-transform: translate3d(0, 2000%, 0);"
+		data-_ranking08="opacity[begin]: 0;"
+		data-_ranking08-850="opacity[begin]: 1;-webkit-transform: translate3d(0, 2000%, 0);"
 		data-_ranking08-950="-webkit-transform: translate3d(0, 0%, 0);">
 	</div>
 	<script>
 		window.addEventListener("load", function() {
 			$("body").addClass("readyS");
-			setTimeout(function() {
-				s.animateTo(100, {
-					duration: 1000,
-					easing: "swing",
-				})
-			}, 100);
-		})
-
-		$().ready(function() {
-			window.s = skrollr.init({
-				smoothScrolling: true,
-  				smoothScrollingDuration: 200,
-				mobileDeceleration: 1,
-				constants: {
-					title: 0,
-					records: 750,
-					ranking: 3875,
-					ranking02: 3875 + 750,
-					ranking03: 3875 + 750 * 2,
-					ranking04: 3875 + 750 * 3,
-					ranking05: 3875 + 750 * 4,
-					ranking06: 3875 + 750 * 5,
-					ranking07: 3875 + 750 * 6,
-					ranking08: 3875 + 750 * 7
-				}
-			});
+			$().ready(function() {
+				window.s = skrollr.init({
+					smoothScrolling: true,
+	  				smoothScrollingDuration: 200,
+					mobileDeceleration: 0.008,
+					constants: {
+						title: 0,
+						records: 750,
+						ranking: 3875,
+						ranking02: 3875 + 750,
+						ranking03: 3875 + 750 * 2,
+						ranking04: 3875 + 750 * 3,
+						ranking05: 3875 + 750 * 4,
+						ranking06: 3875 + 750 * 5,
+						ranking07: 3875 + 750 * 6,
+						ranking08: 3875 + 750 * 7
+					}
+				});
+			})
 		})
 	</script>
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>2014“无能”的淘宝</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/main.css">
+  	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/weixinapi.js"></script>
+</head>
+<body -webkit-touch-callout="none">
+	<iframe id="container"></iframe>
+	<script>
+		$(document).ready(function() {
+			if (((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) && (window.screen.height > 480)) {
+				document.getElementById("container").src="iOS.html";
+			} else {
+				document.getElementById("container").src="Android.html";
+			}
+		});
+	</script>
+</body>
+</html>
