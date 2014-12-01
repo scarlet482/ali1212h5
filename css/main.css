@@ -73,6 +73,15 @@ iframe {
 	margin-top: 125px;
 	margin-left: -40px;
 }
+.loading-bg img {
+	position: absolute;
+	height: 35px;
+	width: 83px;
+	top: 50%;
+	left: 50%;
+	margin-top: 125px;
+	margin-left: -40px;
+}
 .loading-bg{
 	position:absolute;
 	/*background-image: url("../images/bg-loading.png");*/
@@ -95,7 +104,6 @@ iframe {
 }
 
 .bg-loading {
-	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-image: url("../images/bg-loading.png");
@@ -703,6 +711,7 @@ p {
 /* arrow */
 
 .arrow {
+	position: absolute;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -711,8 +720,6 @@ p {
 	width: 27px;
 	display: none;
 }
-
-
 
 /* ending */
 
@@ -747,3 +754,7 @@ p {
 	margin-left: -81px;
 	width: 161px;
 }
+/*.ending04 {
+	right: 5%;
+	width: 38px;
+}*/
