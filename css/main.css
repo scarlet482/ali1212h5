@@ -1,6 +1,5 @@
 html {
 	height: 100%;
-	/*-webkit-text-size-adjust:none;*/
 	overflow: hidden;
 }
 
@@ -8,9 +7,7 @@ body {
 	position: relative;
 	margin: 0 auto;
 	min-width: 320px;
-	/*word-break: break-all;*/
 	height: 100%;
-	/*overflow: hidden;*/
 	max-width: 414px;
 }
 
@@ -35,7 +32,6 @@ iframe {
 	height: 100%;
 	z-index: 999;
 	-webkit-transform: translate3d(0,0,0);
-	/*-webkit-transition:all 1s ease-in-out;*/
 }
 #loading img:nth-child(1){
 	position:absolute;
@@ -84,18 +80,11 @@ iframe {
 }
 .loading-bg{
 	position:absolute;
-	/*background-image: url("../images/bg-loading.png");*/
 	background-color:rgb(252,83,31);
-	/*background-size: 317px 545px;*/
-	/*background-position: center;*/
 	width:100%;
 	height:100%;
-	/*z-index: 998;*/
 }
 /* ready */
-.readyS .arrow {
-	display: block;
-}
 .readyS #loading img:nth-child(3) {
 	display: none;
 }
@@ -176,15 +165,19 @@ iframe {
 	right: 50%;
 	top: 162px;
 	width: 332px;
+	height: 332px;
 }
 
-.month-odd img {
+.month-odd div {
 	left: 50%;
 	margin-left: -85px;
 	margin-top: -69px; 
 	width: 169px;
+	height: 468px;
 	-webkit-transform-origin: 50% 50%;
 	-webkit-transform: rotate(45deg);
+	background-image: url("../images/months.png");
+	background-size: 2029px 468px;
 }
 
 .month-even {
@@ -193,13 +186,64 @@ iframe {
 	width: 332px;
 }
 
-.month-even img {
+.month-even div {
 	left: 50%;
 	margin-left: -85px;
 	margin-top: -69px; 
 	width: 169px;
+	height: 468px;
 	-webkit-transform-origin: 50% 50%;
 	-webkit-transform: rotate(-45deg);
+	background-image: url("../images/months.png");
+	background-size: 2029px 468px;
+}
+
+.month01 div {
+	background-position: -1690px 0px;
+}
+
+.month02 div {
+	background-position: -507px 0px;
+}
+
+.month03 div {
+	background-position: -1014px 0px;
+}
+
+.month04 div {
+	background-position: -169px 0px;
+}
+
+.month05 div {
+	background-position: -1352px 0px;
+}
+
+.month06 div {
+	background-position: -338px 0px;
+}
+
+.month07 div {
+	background-position: -1521px 0px;
+}
+
+.month08 div {
+	background-position: -676px 0px;
+}
+
+.month09 div {
+	background-position: -1859px 0px;
+}
+
+.month10 div {
+	background-position: -1183px 0px;
+}
+
+.month11 div {
+	background-position: -845px 0px;
+}
+
+.month12 div {
+	background-position: 0px 0px;
 }
 
 .icon-odd {
@@ -449,7 +493,6 @@ p {
 
 
 
-/* modified: 改用CSS3选择器 */
 .bg-ranking {
 	width: 100%;
 	height: 100%;
@@ -710,7 +753,7 @@ p {
 
 /* arrow */
 
-.arrow {
+#arrow {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -719,6 +762,29 @@ p {
 	bottom: 10px;
 	width: 27px;
 	display: none;
+}
+
+#arrow.ani {
+	-webkit-animation: ani-arrow 1s infinite;
+}
+
+@-webkit-keyframes ani-arrow {
+    0% {
+    	opacity: 0;
+    }
+    40% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, -12px, 0);
+    	transform: translate3d(0, -12px, 0);
+	}
+    80% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -18px, 0);
+    	transform: translate3d(0, -18px, 0);
+	}
+    100% {
+		opacity: 0;
+	}
 }
 
 /* ending */
@@ -754,7 +820,3 @@ p {
 	margin-left: -81px;
 	width: 161px;
 }
-/*.ending04 {
-	right: 5%;
-	width: 38px;
-}*/
